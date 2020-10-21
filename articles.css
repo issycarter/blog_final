@@ -1,0 +1,267 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+
+body{
+	grid-template-rows: 1fr;
+  grid-template-columns: 2fr;
+  background-color:#FEFCE8;
+
+
+}  
+
+
+a {
+    color: #4a4a4a;
+    transition: color ease 0.3s, border ease 0.3s, background ease 0.3s; }
+  
+
+  
+  h2 a, h3 a, h4 a {
+    color: #50585D; }
+  
+  p, ul, ol {
+    margin: 1.6em 0; }
+  
+  ol ol, ul ul,
+  ul ol, ol ul {
+    margin: 0.4em 0; }
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0.2px solid #efefef;
+    margin: 1em 0;
+    padding: 0; }
+  
+  blockquote {
+    margin: 1.6em 0 1.6em 0;
+    padding: 0 0 0 1.6em;
+    border-left: #4a4a4a 0.4em solid;
+    margin: 0.8em 0;
+    font-style: italic; }
+  
+  blockquote small {
+    display: inline-block;
+    margin: 0.8em 0 0.8em 1.5em;
+    font-size: 0.9em;
+    color: #ccc; }
+  
+  blockquote small:before {
+    content: '\2014 \00A0'; }
+  
+  article p:first-of-type:first-letter {
+    float: left;
+    font-size: 5.8rem;
+    line-height: 5.4rem;
+    margin: 0 6px 0 0; }
+
+
+ 
+  main {
+    width: 60%;
+    position: relative;
+    padding: 0;
+    margin: 10% 0 0 10%;
+  }
+  
+  article {
+
+    word-break: break-word;
+    hyphens: auto;
+    background-color:#ebcbbb;
+    border-radius: 4px; }
+  
+
+ 
+  
+  .post-end span {
+    float: right;
+    font-style: italic; }
+  
+  article img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto; }
+  
+    article {
+      padding: 8%; }
+  
+.separation{
+
+
+}
+  
+
+      /*-----Responsiveness---*/
+  @media only screen and (max-width: 900px) {
+  
+  
+  
+    blockquote {
+      margin-left: 0; }
+  
+    p:first-child:first-letter {
+      font-size: 5.2rem;
+      line-height: 5rem;
+      margin: 0 4px 0 0; }
+  
+    main {
+      width: 80%;
+      max-width: none;
+      padding-top: 10%;}
+  
+    article {
+      font-size: 0.9em;
+      line-height: 1.6em;
+      margin-bottom: 30px;
+      padding: 8%;
+    }
+  
+    h2 {
+      font-size: 2.4rem;
+      line-height: 1.1em;
+      letter-spacing: 0; }
+  
+    h3 {
+      font-size: 2.0rem;
+      line-height: 2.2rem; }
+  
+      h4 {
+        font-size: 2.0rem;
+        line-height: 2.2rem; }
+
+  @media only screen and (max-width: 500px) {
+    
+    main {
+      width: 95%;
+      max-width: none;
+      margin: 3% auto;
+    
+    }
+  
+   
+  
+    p:first-child:first-letter {
+      font-size: 4.4rem;
+      line-height: 4.6rem;
+      margin: 0 4px 0 0; }
+  
+    h2 {
+      font-size: 2.4rem;
+      line-height: 1.1em;
+      letter-spacing: 0; }
+  
+    h3 {
+      font-size: 2.0rem;
+      line-height: 2.2rem; }
+  
+    h4 {
+      font-size: 1.8rem;
+      line-height: 2.0rem; }
+   }
+
+
+   /*-------Grid---*/
+   .col1 {
+    -ms-grid-column: 1;
+  }
+  
+  .col2 {
+    -ms-grid-column: 3;
+  }
+  
+  .col3 {
+    -ms-grid-column: 5;
+  }
+  
+  .row1 {
+    -ms-grid-row: 1;
+  }
+  
+  .row2 {
+    -ms-grid-row: 5;
+  }
+  
+  .row3 {
+    -ms-grid-row: 9;
+  }
+  
+  .row3_5 {
+    -ms-grid-row: 11;
+  }
+  
+  #blog-link1s {
+    /* Grid template */
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 24px;
+    padding: 24px;
+  }
+  
+  #blog-link1s .blog-link1 {
+    padding: 32px;
+    background-color: #ebcbbb;
+  
+    display: block;
+    text-decoration: none;
+  }
+  
+  #blog-link1s .blog-link1 .article-image {
+    height: 348px;
+    margin-bottom: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #blog-link1s .blog-link1 h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.24;
+    text-align: left;
+    margin: 0;
+    max-width: 100%; /* for IE10 */
+  }
+  
+
+  
+  #blog-links .type-image-2-2 {
+    -ms-grid-row-span: 3;
+    -ms-grid-column-span: 3;
+    grid-column: span 2;
+    grid-row: span 2;
+    text-align: left;
+  }
+  
+  #blog-links .type-heading-1-1 {
+    -ms-grid-row-span: 1;
+    -ms-grid-column-span: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  #blog-links .type-image-2-2 span {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background-color: #212121;
+    color: #ebcbbb;
+    padding: 4px 24px;
+    display: inline-block;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+  }
+
+
+
+
+
+
+  
