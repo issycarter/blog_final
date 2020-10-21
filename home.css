@@ -50,7 +50,7 @@
       }
 
       #section3 {
-        height:0px;
+        height:60px;
        
       }
  /*------scroll-------*/
@@ -219,6 +219,14 @@ button{
 }
 
 
+.arrow img{
+  float: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
 #blog-links .type-image-2-1 {
   -ms-grid-row-span: 3;
